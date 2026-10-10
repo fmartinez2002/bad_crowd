@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bad Crowd</title>
+  <meta name="description" content="Bad Crowd. Ropa para la junta que nunca fue buena influencia. Poleras, polerones y stickers hechos en Chile. Est. 2026.">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:title" content="Bad Crowd">
+  <meta property="og:description" content="Ropa para la junta que nunca fue buena influencia. Hecho en Chile, est. 2026.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111111'/%3E%3Ctext x='8' y='44' font-family='Arial Black,Arial' font-weight='900' font-size='30' fill='%23F4F2EE'%3EBC%3C/text%3E%3Crect x='49' y='37' width='7' height='7' fill='%23E0245E'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Sprite: íconos y la ruta del sello. La oveja la registra js/mockups.js. -->
+<svg id="sprite" class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path id="seal-path" d="M110,110 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0" fill="none"/>
+  </defs>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12.2H6.2L5 8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-flip" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 0 1 13.2-4.9M19.5 12a7.5 7.5 0 0 1-13.2 4.9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 3.5v4h-4M6 20.5v-4h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-dice" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="8.5" cy="8.5" r="1.6" fill="currentColor"/><circle cx="15.5" cy="15.5" r="1.6" fill="currentColor"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 19.5l1.3-4A8 8 0 1 1 8.6 19L4 19.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<div class="topbar" aria-hidden="true">
+  <div class="marquee">
+    <span>Drop 01 ✦ Hecho en Chile ✦ Est. 2026 ✦ La oveja negra del grupo ✦ Pedidos por WhatsApp ✦ </span>
+    <span>Drop 01 ✦ Hecho en Chile ✦ Est. 2026 ✦ La oveja negra del grupo ✦ Pedidos por WhatsApp ✦ </span>
+  </div>
+</div>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Bad Crowd, inicio">BAD CROWD<i class="d">.</i></a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#coleccion">Colección</a></li>
+        <li><a href="#frases">Frases</a></li>
+        <li><a href="#pack">Pack</a></li>
+        <li><a href="#credencial">Credencial</a></li>
+        <li><a href="#stickers">Stickers</a></li>
+        <li><a href="#marca">Marca</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="bag-btn" type="button" id="bag-open" aria-controls="bag" aria-expanded="false">
+        <svg aria-hidden="true"><use href="#i-bag"/></svg>
+        <span class="bag-btn-label">Bolsa</span>
+        <span class="bag-count" data-bag-count>0</span>
+      </button>
+      <button class="menu-btn" type="button" id="menu-btn" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        <svg aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Drop 01 · Hecho en Chile · Est. 2026</p>
+        <h1 class="hero-title" id="hero-title">
+          <span class="hero-x"><span class="x" id="hero-phrase">buena junta</span></span>
+          <span class="hero-line">BAD</span>
+          <span class="hero-line">CROWD<i class="d">.</i></span>
+        </h1>
+        <p class="hero-lead">Ropa para la junta que nunca fue buena influencia. Poleras, polerones y stickers para los que llegan tarde, se van último y dicen «una y nos vamos».</p>
+        <div class="hero-cta">
+          <a class="btn btn--ink" href="#coleccion">Ver la colección <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--line" href="#credencial">Saca tu credencial</a>
+        </div>
+        <ul class="hero-facts" aria-label="Lo que hay">
+          <li><b id="fact-designs">17</b> diseños</li>
+          <li><b>3</b> colores de prenda</li>
+          <li><b>1</b> oveja negra</li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-stage" id="hero-stage" data-mock="polera-buena-junta-negra" data-view="front"></div>
+        <div class="hero-stk hero-stk--seal" data-seal></div>
+        <div class="hero-stk hero-stk--bc stk stk--bc" aria-hidden="true"><span>BC<i class="d">.</i></span></div>
+        <div class="hero-stk hero-stk--pill stk stk--pill" aria-hidden="true"><s>buena junta</s></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CINTA -->
+  <div class="ribbon-wrap" aria-hidden="true"><div class="ribbon">
+    <div class="marquee marquee--slow">
+      <span>BAD CROWD<i>.</i> ✦ <s>buena junta</s> ✦ HECHO EN CHILE ✦ EST. 2026 ✦ <s>me porto bien</s> ✦ LA OVEJA NEGRA ✦ </span>
+      <span>BAD CROWD<i>.</i> ✦ <s>buena junta</s> ✦ HECHO EN CHILE ✦ EST. 2026 ✦ <s>me porto bien</s> ✦ LA OVEJA NEGRA ✦ </span>
+    </div>
+  </div></div>
+
+  <!-- MANIFIESTO -->
+  <section class="band band--ink manifesto" id="manifiesto" aria-labelledby="manifiesto-title">
+    <div class="wrap manifesto-grid">
+      <div class="manifesto-main">
+        <p class="eyebrow">Manifiesto</p>
+        <h2 class="title" id="manifiesto-title">Somos <span class="x x--title">buena</span> mala junta<i class="d">.</i></h2>
+        <div class="prose">
+          <p>En Chile, ser <em>buena junta</em> es ser la amistad que te lleva por buen camino. La que te deja en la casa temprano y te recuerda que mañana hay prueba.</p>
+          <p>Bad Crowd es para la otra. La que dice «una y nos vamos» y cierra el local. La que avisa que va en camino desde la ducha. La que nunca pone la casa, pero siempre llega.</p>
+          <p>Tachamos lo que se espera de nosotros y lo llevamos puesto. Poleras, polerones y stickers diseñados y hechos en Chile.</p>
+        </div>
+      </div>
+      <aside class="rules" aria-labelledby="rules-title">
+        <svg class="rules-sheep" viewBox="0 0 170 142" aria-hidden="true"><use href="#sheep"/></svg>
+        <h3 class="rules-title" id="rules-title">Reglas de la junta</h3>
+        <ol class="rules-list">
+          <li>Nadie se va primero.</li>
+          <li>«Una y nos vamos» nunca es una.</li>
+          <li>El que avisa, no avisa.</li>
+          <li>Lo que pasa en la junta, queda en el grupo.</li>
+          <li>El punto final siempre es rosa.</li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+
+  <!-- COLECCIÓN -->
+  <section class="band" id="coleccion" aria-labelledby="coleccion-title">
+    <div class="wrap">
+      <header class="sec-head sec-head--split">
+        <div>
+          <p class="eyebrow">Drop 01</p>
+          <h2 class="title" id="coleccion-title">Colección<i class="d">.</i></h2>
+        </div>
+        <p class="lead">Poleras y polerones en crudo, gris y negro. Pasa el cursor por una prenda o toca <svg class="inline-ico" aria-hidden="true"><use href="#i-flip"/></svg> para ver la espalda.</p>
+      </header>
+
+      <div class="filters" role="toolbar" aria-label="Filtrar colección">
+        <div class="chip-row" id="filter-cat">
+          <button class="chip" type="button" data-cat="all" aria-pressed="true">Todo</button>
+          <button class="chip" type="button" data-cat="polera" aria-pressed="false">Poleras</button>
+          <button class="chip" type="button" data-cat="poleron" aria-pressed="false">Polerones</button>
+          <button class="chip" type="button" data-cat="pack" aria-pressed="false">Packs</button>
+          <button class="chip" type="button" data-cat="sticker" aria-pressed="false">Stickers</button>
+        </div>
+        <div class="chip-row" id="filter-color">
+          <button class="chip chip--sw" type="button" data-color="all" aria-pressed="true">Todos los colores</button>
+          <button class="chip chip--sw" type="button" data-color="crudo" aria-pressed="false"><span class="sw sw--crudo"></span>Crudo</button>
+          <button class="chip chip--sw" type="button" data-color="gris" aria-pressed="false"><span class="sw sw--gris"></span>Gris</button>
+          <button class="chip chip--sw" type="button" data-color="negro" aria-pressed="false"><span class="sw sw--negro"></span>Negro</button>
+        </div>
+        <p class="filter-count" id="catalog-count" aria-live="polite"></p>
+      </div>
+
+      <div class="grid" id="catalog"></div>
+    </div>
+  </section>
+
+  <!-- FRASES TACHADAS -->
+  <section class="band band--ink" id="frases" aria-labelledby="frases-title">
+    <div class="wrap">
+      <header class="sec-head sec-head--split">
+        <div>
+          <p class="eyebrow">Serie</p>
+          <h2 class="title" id="frases-title">La serie tachada<i class="d">.</i></h2>
+        </div>
+        <p class="lead">Seis frases que tu familia todavía cree. Las tachamos por ti y les pusimos BAD CROWD. debajo.</p>
+      </header>
+
+      <div class="series" id="series"></div>
+
+      <div class="maker" id="maker">
+        <div class="maker-controls">
+          <h3 class="h3">Tacha tu propia frase<i class="d">.</i></h3>
+          <p class="muted">Escribe la mentira que más repites. Nosotros la tachamos.</p>
+          <form id="maker-form" novalidate>
+            <label class="field-label" for="maker-phrase">Tu frase</label>
+            <input class="field" id="maker-phrase" name="phrase" type="text" maxlength="28" value="mañana empiezo" autocomplete="off" aria-describedby="maker-hint">
+            <p class="hint" id="maker-hint">Máximo 28 caracteres. <span id="maker-left">14</span> disponibles.</p>
+            <div class="presets" role="group" aria-label="Ideas de frases">
+              <button type="button" class="preset">solo una</button>
+              <button type="button" class="preset">me voy temprano</button>
+              <button type="button" class="preset">no tomo más</button>
+              <button type="button" class="preset">ya voy</button>
+              <button type="button" class="preset">hago caso</button>
+              <button type="button" class="preset">estudio el finde</button>
+            </div>
+
+            <fieldset class="opt">
+              <legend class="field-label">Prenda</legend>
+              <div class="seg seg--dark">
+                <input type="radio" name="garment" id="mk-tee" value="tee" checked><label for="mk-tee">Polera</label>
+                <input type="radio" name="garment" id="mk-hoodie" value="hoodie"><label for="mk-hoodie">Polerón</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="opt">
+              <legend class="field-label">Color</legend>
+              <div class="swatches">
+                <input type="radio" name="mcolor" id="mk-crudo" value="crudo"><label for="mk-crudo"><span class="sw sw--crudo"></span>Crudo</label>
+                <input type="radio" name="mcolor" id="mk-gris" value="gris"><label for="mk-gris"><span class="sw sw--gris"></span>Gris</label>
+                <input type="radio" name="mcolor" id="mk-negro" value="negro" checked><label for="mk-negro"><span class="sw sw--negro"></span>Negro</label>
+              </div>
+            </fieldset>
+
+            <p class="form-error" id="maker-error" role="alert" hidden>Escribe una frase de al menos 2 letras para tacharla.</p>
+            <div class="maker-buy">
+              <span class="price" id="maker-price"></span>
+              <button class="btn btn--pink" type="submit">Elegir talla y agregar</button>
+            </div>
+          </form>
+        </div>
+        <div class="maker-preview">
+          <div class="maker-stage" id="maker-stage"></div>
+          <p class="stage-label">Vista previa · frente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACK -->
+  <section class="band" id="pack" aria-labelledby="pack-title">
+    <div class="wrap">
+      <header class="sec-head sec-head--center">
+        <p class="eyebrow">Para la junta completa</p>
+        <h2 class="title" id="pack-title">Pack Bad Crowd<i class="d">.</i></h2>
+        <p class="lead">Cinco poleras negras numeradas, una para cada personaje del grupo. Tachamos el rol que nadie cumple.</p>
+      </header>
+
+      <div class="pack-row" id="pack-row"></div>
+
+      <div class="pack-bottom">
+        <div class="offer">
+          <p class="eyebrow">Pack x5</p>
+          <p class="offer-title">Las cinco<i class="d">.</i></p>
+          <p class="offer-price"><span id="pack-price"></span> <s id="pack-was"></s></p>
+          <p class="offer-save" id="pack-save"></p>
+          <p class="offer-note">Una talla por polera: elige una al agregar y ajusta las demás en el mensaje del pedido.</p>
+          <button class="btn btn--pink btn--block" type="button" data-open="pack-bad-crowd">Agregar el pack</button>
+        </div>
+
+        <div class="quiz" id="quiz" aria-live="polite">
+          <div class="quiz-head">
+            <p class="eyebrow">Test</p>
+            <h3 class="h3">¿Qué <u>no</u> eres en la junta?</h3>
+            <div class="quiz-progress" aria-hidden="true"><span id="quiz-bar"></span></div>
+          </div>
+          <div class="quiz-body" id="quiz-body"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENDIENTES -->
+  <section class="band band--gris" id="pendientes" aria-labelledby="pendientes-title">
+    <div class="wrap todo-grid">
+      <div class="todo-copy">
+        <p class="eyebrow">Polera Pendientes</p>
+        <h2 class="title title--md" id="pendientes-title">Pendientes<i class="d">.</i></h2>
+        <p class="lead">La lista de tareas más honesta de Chile. Agrega lo que tengas pendiente y lo tachamos al tiro.</p>
+
+        <div class="todo-card">
+          <p class="todo-label">Pendientes:</p>
+          <ul class="todo-list" id="todo-list"></ul>
+          <div class="todo-done"><svg aria-hidden="true"><use href="#i-check"/></svg><span>salir con<br>la bad crowd<i class="d">.</i></span></div>
+          <form class="todo-form" id="todo-form" novalidate>
+            <label class="sr-only" for="todo-input">Nuevo pendiente</label>
+            <input class="field field--light" id="todo-input" type="text" maxlength="22" placeholder="Ej: ir al gimnasio" autocomplete="off">
+            <button class="btn btn--ink" type="submit">Tachar</button>
+          </form>
+          <p class="todo-status" id="todo-status" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="todo-preview">
+        <div class="todo-stage" id="todo-stage"></div>
+        <p class="stage-label">Así queda tu lista en la espalda</p>
+        <button class="btn btn--ink" type="button" id="todo-buy">Quiero esta polera</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVEJA NEGRA -->
+  <section class="band" id="oveja" aria-labelledby="oveja-title">
+    <div class="wrap sheep-grid-wrap">
+      <div class="sheep-copy">
+        <p class="eyebrow">La mascota</p>
+        <h2 class="title title--md" id="oveja-title">La oveja negra<i class="d">.</i></h2>
+        <p class="lead">Hay una en cada grupo. Toca las ovejas blancas y mira cómo se contagia.</p>
+        <p class="sheep-count"><b id="sheep-n">1</b> de 12 ovejas negras</p>
+        <p class="sheep-msg" id="sheep-msg" aria-live="polite">Una oveja negra. Como en toda junta.</p>
+        <div class="sheep-actions">
+          <button class="btn btn--line" type="button" id="sheep-reset">Volver al rebaño</button>
+          <button class="btn btn--ink" type="button" data-open="polera-oveja-negra">Polera Oveja Negra</button>
+          <button class="btn btn--ink" type="button" data-open="poleron-oveja-negra">Polerón</button>
+        </div>
+      </div>
+      <div class="flock" id="flock" role="group" aria-label="Rebaño de 12 ovejas"></div>
+    </div>
+  </section>
+
+  <!-- CREDENCIAL -->
+  <section class="band band--ink" id="credencial" aria-labelledby="cred-title">
+    <div class="wrap cred-grid">
+      <div class="cred-copy">
+        <p class="eyebrow">Miembro oficial</p>
+        <h2 class="title title--md" id="cred-title">Saca tu credencial<i class="d">.</i></h2>
+        <p class="lead">Nombre, número de miembro y vigencia: hasta nunca. Descárgala o estámpala en la espalda de una polera negra.</p>
+        <form class="cred-form" id="cred-form" novalidate>
+          <div>
+            <label class="field-label" for="cred-name">Nombre</label>
+            <input class="field" id="cred-name" type="text" maxlength="22" placeholder="Tu nombre o apodo" autocomplete="off">
+          </div>
+          <div>
+            <label class="field-label" for="cred-num">Miembro N°</label>
+            <div class="num-row">
+              <input class="field field--num" id="cred-num" type="text" inputmode="numeric" maxlength="4" pattern="[0-9]{1,4}" autocomplete="off">
+              <button class="icon-btn" type="button" id="cred-dice" aria-label="Sortear otro número"><svg aria-hidden="true"><use href="#i-dice"/></svg></button>
+            </div>
+          </div>
+          <fieldset class="opt">
+            <legend class="field-label">Encabezado</legend>
+            <div class="seg seg--dark">
+              <input type="radio" name="chead" id="ch-rosa" value="rosa" checked><label for="ch-rosa">Rosa</label>
+              <input type="radio" name="chead" id="ch-negro" value="negro"><label for="ch-negro">Negro</label>
+            </div>
+          </fieldset>
+        </form>
+        <div class="cred-actions">
+          <button class="btn btn--pink" type="button" id="cred-shirt">Estampar en polera</button>
+          <button class="btn btn--line-light site-only" type="button" id="cred-download"><svg aria-hidden="true"><use href="#i-download"/></svg> Descargar PNG</button>
+        </div>
+      </div>
+      <div class="cred-preview">
+        <div class="cred-card" id="cred-card"></div>
+        <div class="cred-tee">
+          <div class="cred-tee-stage" id="cred-tee"></div>
+          <p class="stage-label">En la espalda</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKERS -->
+  <section class="band band--paper" id="stickers" aria-labelledby="stickers-title">
+    <div class="wrap">
+      <header class="sec-head sec-head--split">
+        <div>
+          <p class="eyebrow">Pack de 9</p>
+          <h2 class="title" id="stickers-title">Stickers<i class="d">.</i></h2>
+        </div>
+        <p class="lead">Arrástralos por la mesa. Después pégalos en el notebook, la guitarra o la puerta del baño de alguien.</p>
+      </header>
+      <div class="board" id="board" aria-label="Mesa de stickers. Arrastra cada sticker o muévelo con las flechas del teclado."></div>
+      <div class="board-bar">
+        <div class="board-tools">
+          <button class="btn btn--line" type="button" id="board-mess">Desordenar</button>
+          <button class="btn btn--line" type="button" id="board-tidy">Ordenar</button>
+        </div>
+        <div class="board-buy">
+          <span class="price" id="stickers-price"></span>
+          <button class="btn btn--ink" type="button" id="stickers-add">Agregar pack de stickers</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARCA -->
+  <section class="band" id="marca" aria-labelledby="marca-title">
+    <div class="wrap">
+      <header class="sec-head sec-head--split">
+        <div>
+          <p class="eyebrow">Identidad</p>
+          <h2 class="title" id="marca-title">La marca<i class="d">.</i></h2>
+        </div>
+        <p class="lead">Un sistema simple: tachar lo que se espera de ti y terminar siempre con un punto rosa.</p>
+      </header>
+
+      <div class="logos">
+        <figure class="lcard">
+          <div class="lcard-art"><div class="logo-stack"><span class="x">buena junta</span><b>BAD<br>CROWD<i class="d">.</i></b></div></div>
+          <figcaption>01 — Principal</figcaption>
+        </figure>
+        <figure class="lcard">
+          <div class="lcard-art"><div class="logo-h"><span class="x">buena junta</span><b>BAD CROWD<i class="d">.</i></b></div></div>
+          <figcaption>02 — Horizontal</figcaption>
+        </figure>
+        <figure class="lcard lcard--ink">
+          <div class="lcard-art"><div class="logo-mono"><b>BC<i class="d">.</i></b></div></div>
+          <figcaption>03 — Monograma</figcaption>
+        </figure>
+        <figure class="lcard">
+          <div class="lcard-art"><div class="logo-seal" data-seal></div></div>
+          <figcaption>04 — Sello</figcaption>
+        </figure>
+        <figure class="lcard">
+          <div class="lcard-art"><div class="logo-capsule">BAD CROWD<i class="d">.</i></div></div>
+          <figcaption>05 — Cápsula</figcaption>
+        </figure>
+        <figure class="lcard">
+          <div class="lcard-art"><svg class="logo-sheep" viewBox="0 0 170 142" role="img" aria-label="La oveja negra"><use href="#sheep"/></svg></div>
+          <figcaption>06 — Mascota: la oveja negra</figcaption>
+        </figure>
+      </div>
+
+      <div class="brand-sys">
+        <div class="palette">
+          <h3 class="h4">Paleta</h3>
+          <div class="swatch-row">
+            <button class="swatch" type="button" data-hex="#F4F2EE" style="--c:#F4F2EE">
+              <span class="swatch-chip"></span>
+              <span class="swatch-name">Crudo</span><span class="swatch-hex">#F4F2EE</span><span class="swatch-use">Fondos y prendas claras</span>
+            </button>
+            <button class="swatch" type="button" data-hex="#E0245E" style="--c:#E0245E">
+              <span class="swatch-chip"></span>
+              <span class="swatch-name">Rosa</span><span class="swatch-hex">#E0245E</span><span class="swatch-use">El punto y el tachado</span>
+            </button>
+            <button class="swatch" type="button" data-hex="#111111" style="--c:#111111">
+              <span class="swatch-chip"></span>
+              <span class="swatch-name">Negro</span><span class="swatch-hex">#111111</span><span class="swatch-use">Logo, texto y prendas</span>
+            </button>
+          </div>
+          <p class="hint hint--dark">Toca un color para copiar su código.</p>
+          <div class="garment-colors">
+            <span class="field-label">Colores de prenda</span>
+            <ul>
+              <li><span class="sw sw--crudo"></span>Crudo</li>
+              <li><span class="sw sw--gris"></span>Gris</li>
+              <li><span class="sw sw--negro"></span>Negro</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="type-spec">
+          <h3 class="h4">Tipografía</h3>
+          <div class="spec spec--display">
+            <p class="spec-aa">Aa</p>
+            <div><p class="spec-name">Archivo Black</p><p class="spec-use">Logo, titulares y precios. Siempre en mayúsculas.</p></div>
+          </div>
+          <div class="spec spec--body">
+            <p class="spec-aa">Aa</p>
+            <div><p class="spec-name">Space Grotesk</p><p class="spec-use">Textos, etiquetas y frases tachadas, en minúsculas.</p></div>
+          </div>
+        </div>
+
+        <div class="dodont">
+          <h3 class="h4">Reglas de uso</h3>
+          <ul>
+            <li class="do"><svg aria-hidden="true"><use href="#i-check"/></svg>El punto final siempre es rosa.</li>
+            <li class="do"><svg aria-hidden="true"><use href="#i-check"/></svg>La frase tachada va arriba y en minúsculas.</li>
+            <li class="do"><svg aria-hidden="true"><use href="#i-check"/></svg>El tachado es rosa y va un poco chueco, como hecho a mano.</li>
+            <li class="dont"><svg aria-hidden="true"><use href="#i-x"/></svg>Nunca se tacha BAD CROWD.</li>
+            <li class="dont"><svg aria-hidden="true"><use href="#i-x"/></svg>No cambiar el rosa por otro color.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TALLAS Y PEDIDOS -->
+  <section class="band band--paper" id="tallas" aria-labelledby="tallas-title">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">Antes de pedir</p>
+        <h2 class="title" id="tallas-title">Tallas y pedidos<i class="d">.</i></h2>
+      </header>
+      <div class="info-grid">
+        <div class="steps">
+          <h3 class="h4">Cómo comprar</h3>
+          <ol>
+            <li><span><b>Elige</b> tus prendas, color y talla, y agrégalas a la bolsa.</span></li>
+            <li><span><b>Revisa</b> la bolsa: cantidades, tallas y personalizaciones.</span></li>
+            <li><span><b>Envía</b> el pedido por WhatsApp. Ahí coordinamos el pago y la entrega.</span></li>
+          </ol>
+        </div>
+        <div class="sizes-box">
+          <div class="tabs" role="tablist" aria-label="Guía de tallas">
+            <button class="tab" role="tab" id="tab-tee" aria-selected="true" aria-controls="panel-tee" type="button">Polera</button>
+            <button class="tab" role="tab" id="tab-hoodie" aria-selected="false" aria-controls="panel-hoodie" type="button" tabindex="-1">Polerón</button>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="panel-tee" aria-labelledby="tab-tee">
+            <div class="table-wrap">
+              <table class="size-table">
+                <thead><tr><th scope="col">Talla</th><th scope="col">Ancho</th><th scope="col">Largo</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">S</th><td>49 cm</td><td>69 cm</td></tr>
+                  <tr><th scope="row">M</th><td>52 cm</td><td>72 cm</td></tr>
+                  <tr><th scope="row">L</th><td>55 cm</td><td>74 cm</td></tr>
+                  <tr><th scope="row">XL</th><td>58 cm</td><td>76 cm</td></tr>
+                  <tr><th scope="row">XXL</th><td>61 cm</td><td>78 cm</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="panel-hoodie" aria-labelledby="tab-hoodie" hidden>
+            <div class="table-wrap">
+              <table class="size-table">
+                <thead><tr><th scope="col">Talla</th><th scope="col">Ancho</th><th scope="col">Largo</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">S</th><td>54 cm</td><td>66 cm</td></tr>
+                  <tr><th scope="row">M</th><td>57 cm</td><td>69 cm</td></tr>
+                  <tr><th scope="row">L</th><td>60 cm</td><td>71 cm</td></tr>
+                  <tr><th scope="row">XL</th><td>63 cm</td><td>73 cm</td></tr>
+                  <tr><th scope="row">XXL</th><td>66 cm</td><td>75 cm</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p class="hint hint--dark">Medidas de la prenda estirada en plano. Ancho de axila a axila; largo desde el hombro.</p>
+        </div>
+        <div class="care">
+          <h3 class="h4">Cuidados</h3>
+          <ul>
+            <li>Lavar al revés, con agua fría.</li>
+            <li>Sin secadora: secar a la sombra.</li>
+            <li>Planchar al revés, nunca sobre el estampado.</li>
+            <li>Sin cloro. Las manchas de la junta salen con paciencia.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="band" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq-wrap">
+      <header class="sec-head">
+        <p class="eyebrow">Dudas</p>
+        <h2 class="title" id="faq-title">Preguntas<i class="d">.</i></h2>
+      </header>
+      <div class="faq">
+        <details open>
+          <summary>¿Cómo hago un pedido?</summary>
+          <p>Agrega lo que quieras a la bolsa y toca «Enviar pedido por WhatsApp». Se abre un mensaje con todo el detalle listo para mandar. Si prefieres, cópialo y envíalo por donde quieras.</p>
+        </details>
+        <details>
+          <summary>¿Cómo pago y cómo me llega?</summary>
+          <p>Cuando recibimos tu mensaje te confirmamos stock, te enviamos los datos de pago y coordinamos la entrega o el envío.</p>
+        </details>
+        <details>
+          <summary>¿Puedo pedir una polera con mi propia frase?</summary>
+          <p>Sí. En <a href="#frases">la serie tachada</a> escribe tu frase, elige polera o polerón y el color. La tachamos en rosa y va con BAD CROWD. debajo.</p>
+        </details>
+        <details>
+          <summary>¿El pack trae tallas distintas?</summary>
+          <p>Sí. Elige una talla al agregarlo y en el mensaje del pedido indica la talla de cada polera, del N° 01 al N° 05.</p>
+        </details>
+        <details>
+          <summary>¿La credencial es de verdad?</summary>
+          <p>Es tan oficial como «una y nos vamos». Puedes descargarla o pedirla estampada en la espalda de una polera negra con tu nombre y número.</p>
+        </details>
+        <details>
+          <summary>¿Qué significa «buena junta»?</summary>
+          <p>En Chile, la «buena junta» es la amistad que te lleva por buen camino. Nosotros la tachamos. Bad Crowd es la otra junta, la que te llevas puesta.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer band--ink">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <div class="logo-stack logo-stack--xl"><span class="x">buena junta</span><b>BAD<br>CROWD<i class="d">.</i></b></div>
+      <p>Ropa para la junta que nunca fue buena influencia.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Tienda">
+      <p class="field-label">Tienda</p>
+      <ul>
+        <li><a href="#coleccion">Colección</a></li>
+        <li><a href="#frases">Frases tachadas</a></li>
+        <li><a href="#pack">Pack Bad Crowd</a></li>
+        <li><a href="#stickers">Stickers</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-nav" aria-label="La junta">
+      <p class="field-label">La junta</p>
+      <ul>
+        <li><a href="#manifiesto">Manifiesto</a></li>
+        <li><a href="#credencial">Credencial</a></li>
+        <li><a href="#marca">La marca</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+        <li id="ig-item" hidden><a id="ig-link" href="#" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </nav>
+    <div class="footer-seal" data-seal data-seal-ink="light"></div>
+  </div>
+  <div class="wrap">
+    <div class="footer-bottom">
+      <p><span class="x x--light">Todos los derechos reservados</span> Algunos derechos, a veces. © 2026 Bad Crowd.</p>
+      <p>Hecho en Chile ✦ Est. 2026</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Vista rápida -->
+<dialog class="qv" id="qv" aria-labelledby="qv-title">
+  <button class="icon-btn qv-close" type="button" data-close aria-label="Cerrar"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+  <div class="qv-grid">
+    <div class="qv-media">
+      <div class="qv-stage" id="qv-stage"></div>
+      <div class="seg seg--light" id="qv-views" role="group" aria-label="Vista de la prenda">
+        <button type="button" data-view="front" aria-pressed="true">Frente</button>
+        <button type="button" data-view="back" aria-pressed="false">Espalda</button>
+      </div>
+    </div>
+    <form class="qv-info" id="qv-form" novalidate>
+      <p class="eyebrow" id="qv-line"></p>
+      <h2 class="qv-title" id="qv-title"></h2>
+      <p class="qv-price" id="qv-price"></p>
+      <p class="qv-desc" id="qv-desc"></p>
+      <p class="qv-custom" id="qv-custom" hidden></p>
+      <p class="qv-color" id="qv-color"></p>
+      <fieldset class="opt" id="qv-sizes-wrap">
+        <legend class="field-label">Talla</legend>
+        <div class="sizes" id="qv-sizes"></div>
+        <a class="text-link" href="#tallas" data-close>Ver guía de tallas</a>
+      </fieldset>
+      <div class="qv-buy">
+        <div class="qty" role="group" aria-label="Cantidad">
+          <button type="button" data-qty="-1" aria-label="Quitar uno">−</button>
+          <output id="qv-qty" aria-live="polite">1</output>
+          <button type="button" data-qty="1" aria-label="Agregar uno">+</button>
+        </div>
+        <button class="btn btn--ink btn--grow" type="submit">Agregar a la bolsa</button>
+      </div>
+    </form>
+  </div>
+</dialog>
+
+<!-- Bolsa -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="bag" id="bag" aria-labelledby="bag-title" aria-hidden="true" inert>
+  <div class="bag-head">
+    <h2 class="bag-title" id="bag-title">Tu bolsa<i class="d">.</i></h2>
+    <button class="icon-btn" type="button" id="bag-close" aria-label="Cerrar bolsa"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <ul class="bag-items" id="bag-items"></ul>
+  <div class="bag-foot" id="bag-foot" hidden>
+    <div class="bag-total"><span>Total</span><b id="bag-total"></b></div>
+    <a class="btn btn--pink btn--block" id="bag-wa" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg> Enviar pedido por WhatsApp</a>
+    <button class="btn btn--line btn--block" type="button" id="bag-copy"><svg aria-hidden="true"><use href="#i-copy"/></svg> Copiar pedido</button>
+    <label class="sr-only" for="bag-text">Texto del pedido</label>
+    <textarea class="bag-text" id="bag-text" readonly hidden></textarea>
+    <p class="hint hint--dark">El pago y la entrega se coordinan por mensaje.</p>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/mockups.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
