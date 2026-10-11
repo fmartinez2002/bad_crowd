@@ -8,7 +8,7 @@ window.BC_CONFIG = {
   // Link a Instagram (ej: 'https://instagram.com/tu_cuenta'). Vacío = no se muestra.
   instagram: '',
   // Precios en pesos chilenos. Cámbialos antes de publicar.
-  prices: { polera: 24990, poleron: 35990, pack: 90990, stickers: 4990 },
+  prices: { polera: 29990, poleron: 35990, pack: 99990, stickers: 4990 },
   sizes: ['S', 'M', 'L', 'XL', 'XXL'],
 };
 
